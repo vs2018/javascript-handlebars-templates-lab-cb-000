@@ -4,7 +4,6 @@ function initForm() {
   document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
 }
 
-
 function createRecipe() {
   var recipe = getRecipeVals()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
@@ -33,7 +32,7 @@ function displayEditForm() {
   var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
   var template = Handlebars.compile(recipeFormTemplate)
   document.getElementById("main").innerHTML = template(recipe)
-
+}
 
 function getRecipeVals() {
   var ingredientsNodes = document.getElementsByName("ingredients")
@@ -49,7 +48,6 @@ function getRecipeVals() {
   return(recipe)
 }
 
-
 function handlebarsSetup() {
   //put any handlebars registrations here.
   Handlebars.registerHelper('displayIngredient', function(ingredient) {
@@ -61,14 +59,10 @@ function handlebarsSetup() {
 
 
 function init() {
+  //put any page initialization/handlebars initialization here
   handlebarsSetup()
- initForm()
-
-
-
+  initForm()
 }
-
-
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
