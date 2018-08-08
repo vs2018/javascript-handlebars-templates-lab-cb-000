@@ -8,6 +8,11 @@
   </head>
   <body>
     <main id="main">
+      <form onsubmit="postComment();return false;">
+   Name: <input type="text" id="commenterName"><br>
+   Comment: <input type="textarea" id="commentText"><br>
+   <input type="submit">
+ </form>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
