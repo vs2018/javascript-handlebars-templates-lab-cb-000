@@ -2,7 +2,7 @@ function init() {
   //put any page initialization/handlebars initialization here
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
 
-  Handlebars.registerHelper('comment_body', function() {
+  Handlebars.registerHelper('displayIngredient', function() {
   if(this.state === "closed") {
     return new Handlebars.SafeString(this.body)
   } else {
