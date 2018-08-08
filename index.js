@@ -7,6 +7,11 @@ function init() {
     return new Handlebars.SafeString(this.body)
 
 })
+
+
+function displayEditForm() {
+  
+}
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
