@@ -1,3 +1,8 @@
+
+function displayEditForm() {
+
+}
+
 function init() {
   //put any page initialization/handlebars initialization here
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
@@ -9,9 +14,8 @@ function init() {
 })
 
 
-function displayEditForm() {
-  
-}
+
+
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
