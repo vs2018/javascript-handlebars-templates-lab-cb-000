@@ -34,6 +34,9 @@
 
     <script id="recipe-details-partial" type="text/x-handlebars-template">
     <div>{{ description }}</div>
+    {{#each ingredients}}
+     <li>{{name}}</li>
+     {{/each}}
     </script>
 
     <!-- Open this file and call `mocha.run()` in console to run tests -->
